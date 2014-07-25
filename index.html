@@ -1,0 +1,36 @@
+---
+template: nil
+title: "Welcome to Oxfolk"
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="{{ site.css_url }}/oxfolk.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/modernizr.min.js"></script>
+    <![endif]-->
+
+    {% include google_analytics.html %}
+  </head>
+
+  <body data-spy="scroll" data-target="nav ul">
+    {% include navigation.html %}
+
+    {% for section in site.data.frontpage_sections %}
+      {% include {{ section.include }} %}
+    {% endfor %}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ site.js_url }}/bootstrap-scrollspy.min.js"></script>
+    <script src="{{ site.js_url }}/main.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+@mixin box-shadow($shadow-properties...) {
+    -moz-box-shadow: $shadow-properties;
+    -webkit-box-shadow: $shadow-properties;
+    box-shadow: $shadow-properties;
+}
+
+@mixin box-sizing($type: border-box) {
+    -moz-box-sizing: $type;
+    -webkit-box-sizing: $type;
+    box-sizing: $type;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    -ms-filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})");
+    filter: alpha(opacity=#{round($opacity * 100)});
+}
+
+@mixin transition($transition-args...) {
+    -moz-transition: $transition-args;
+    -webkit-transition: $transition-args;
+    -ms-transition: $transition-args;
+    -o-transition: $transition-args;
+    transition: $transition-args;
+}
+
+@mixin background-gradient($start-color, $end-color) {
+    background-color: $start-color;
+    background: -ms-linear-gradient(top, $start-color 0%, $end-color 100%);
+    background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%);
+    background: -o-linear-gradient(top, $start-color 0%, $end-color 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from($start-color), to($end-color));
+    background: -webkit-linear-gradient(top, $start-color 0%, $end-color 100%);
+    background: linear-gradient($start-color 0%, $end-color 100%);
+}
+@mixin background-size($type: 100% cover) {
+    -moz-background-size: $type;
+    -webkit-background-size: $type;
+    background-size: $type;
+}
+@mixin background-clip($type) {
+    -moz-background-clip: $type;
+    -webkit-background-clip: $type;
+    background-clip: $type;
+}

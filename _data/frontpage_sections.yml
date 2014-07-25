@@ -1,0 +1,18 @@
+- id: welcome
+  title: Welcome
+  include: welcome.html
+- id: what-is-a-ceilidh
+  title: What is a ceilidh
+  include: what.html
+- id: whats-on
+  title: What's one
+  include: whats_on.html
+- id: how-much
+  title: How much
+  include: how_much.html
+- id: where
+  title: Where
+  include: where.html
+- id: social
+  title: Social
+  include: social.html

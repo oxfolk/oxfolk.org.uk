@@ -1,0 +1,7 @@
+safe: true
+exclude: ['README.md']
+css_url: /assets/css
+js_url: /assets/js
+sass:
+    sass_dir: _scss
+    style: :expanded

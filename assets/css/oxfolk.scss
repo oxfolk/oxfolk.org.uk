@@ -1,0 +1,378 @@
+---
+---
+@import 'normalize';
+@import 'css3';
+@import 'utils';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    top: $gutter-size;
+    right: $gutter-size;
+    padding: 0; 
+    *zoom: 1;
+    
+    ul:before,
+    ul:after {
+      display: table;
+      line-height: 0;
+      content: "";
+    }
+    ul:after {
+      clear: both;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        zoom: 1;
+        display: block;
+
+    }
+
+    li {
+        display: block;
+        float: left;
+        width: auto;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 4em;
+        margin-left: 0.5em;
+
+    }
+
+    a {
+        display: block;
+        width: auto;
+        height: 4em;
+        background: rgba(255, 255, 255, 0.6) 0 0 no-repeat;
+        background-size: 100%;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        @include box-shadow(0 0 10px $color-black-translucent);
+        @include transition(background 0.2s linear);
+    }
+    a:hover,
+    li.active a {
+        background-color: rgba(0, 142, 179, 0.6);
+    }
+
+}
+nav li.welcome a {
+    background-image: nav-image-url('home.png');
+}
+nav li.welcome.active a,
+nav li.welcome a:hover {
+    background-image: nav-image-url('home-white.png');
+}
+nav li.what-is-a-ceilidh a {
+    background-image: nav-image-url('help.png');
+}
+nav li.what-is-a-ceilidh.active a,
+nav li.what-is-a-ceilidh a:hover,
+i.what-is-a-ceilidh {
+    background-image: nav-image-url('help-white.png');
+}
+nav li.whats-on a,
+i.whats-on {
+    background-image: nav-image-url('calendar.png');
+}
+nav li.whats-on.active a,
+nav li.whats-on a:hover {
+    background-image: nav-image-url('calendar-white.png');
+}
+nav li.how-much a,
+i.how-much {
+    background-image: nav-image-url('pound.png');
+}
+nav li.how-much.active a,
+nav li.how-much a:hover {
+    background-image: nav-image-url('pound-white.png');
+}
+nav li.where a {
+    background-image: nav-image-url('location.png');
+}
+nav li.where.active a,
+nav li.where a:hover,
+i.where {
+    background-image: nav-image-url('location-white.png');
+}
+nav li.social a,
+i.social {
+    background-image: nav-image-url('sharethis.png');
+}
+nav li.social.active a,
+nav li.social a:hover {
+    background-image: nav-image-url('sharethis-white.png');
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.lead {
+    font-size: 1.75em;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+
+article {
+    zoom: 1;
+    @include box-shadow(0 -3px 5px 1px $color-black-translucent);
+    text-shadow: 0 0 2px $color-black-translucent;
+    color: $color-off-white;
+    padding-bottom: $gutter-size;
+}
+#welcome {
+    background: image-url('background-desat.jpg') no-repeat 0 30%;
+    background-size: 100%;
+}
+
+.background-blue {
+    @include background-gradient($color-blue-dark, $color-blue-light);
+}
+.background-green {
+    @include background-gradient($color-green-dark, $color-green-light);
+    color: $color-grey-dark;
+    
+    a {
+        color: $color-blue-dark;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+.background-white {
+    color: $color-grey-dark;
+}
+
+
+.content {
+  padding: $gutter-size 0;
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.content:before,
+.content:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.content:after {
+  clear: both;
+}
+
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.half-width {
+    width: 49%;
+}
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+a {
+    color: $color-grey-dark;
+    text-decoration: none;
+}
+h2 i {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 1.5em;
+  vertical-align: text-top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.twitter-timeline {
+    width: 100%;
+}
+dl {
+    overflow: hidden;
+}
+dt, dd {
+    float: left;
+}
+dt {
+    clear: left;
+}
+dd {
+    margin-left: $gutter-size;
+}
+
+.media-wrapper {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 75%;
+    margin: 0 0 20px;
+    background-color: #000;
+    @include box-shadow(0 0 20px $color-black-translucent);
+}
+.media-wrapper > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+.ceilidh {
+    margin-bottom: $gutter-size;
+    
+    a {
+        display: inline-block;
+        font-size: 4em;
+        margin: $gutter-size-small 0 0 0.5em;
+        background: $color-white;
+        line-height: 0.8;
+        width: 0.8em;
+        height: 0.8em;
+        text-align: center;
+        border-radius: 0.4em;
+        text-shadow: none;
+        @include box-shadow(0 0 10px $color-black-translucent);
+        
+        &:hover {
+            color: $color-green-dark;
+        }
+    }
+}
+.ceilidh:before,
+.ceilidh:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.ceilidh:after {
+  clear: both;
+}
+
+.ceilidh time {
+    background: $color-white;
+    display: block;
+    width: 2em;
+    height: 2em;
+    font-size: 2.5em;
+    line-height: 2em;
+    position: relative;
+    text-align: center;
+    float: left;
+    @include box-shadow(0 0 10px $color-black-translucent);
+}
+.ceilidh time span {
+    font-size: 0.35em;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    line-height: 1;
+    z-index: 2;
+    width: 100%;
+}
+.ceilidh time .year {
+    bottom: $gutter-size-small;
+}
+.ceilidh time .month {
+    top: $gutter-size-small;
+}
+.ceilidh>div {
+  margin-left: $gutter-size;
+  float: left;
+}
+.ceilidh h3 {
+    margin-bottom: 0;
+}
+.ceilidh h4 {
+    color: $color-white;
+    margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 1170px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .content {
+    width: 724px;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: auto;
+  }
+  #welcome {
+    background-size: 150%;
+  }
+  h1 {
+    margin-top: $gutter-size-small;
+  }
+  .lead {
+    font-size: 1.5em;
+  }
+  .twitter-timeline {
+    display: block;
+    width: 100%;
+  }
+  .pull-left,
+  .pull-right {
+    float: none;
+    clear: both;
+  }
+  .half-width {
+    width: auto;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+  nav {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: $color-white;
+    @include box-shadow(0 -3px 5px 1px $color-black-translucent);
+  }
+  nav ul {
+    width: 24em;
+    margin: 0 auto;
+  }
+  nav li {
+    margin: 0;
+  }
+  nav a {
+      @include box-shadow(none);
+  }
+  .ceilidh>div {
+    max-width: 15em;
+  }
+  .ceilidh h3 {
+    margin-top: $gutter-size-small;
+  }
+}
