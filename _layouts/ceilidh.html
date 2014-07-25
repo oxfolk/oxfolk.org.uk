@@ -1,10 +1,33 @@
-<html>
-    <head></head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="{{ site.css_url }}/oxfolk.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/modernizr.min.js"></script>
+    <![endif]-->
+
+    {% include google_analytics.html %}
+  </head>
+
+  <body data-spy="scroll" data-target="nav ul">
+    {% include navigation.html %}
+    
+    <div class="content">
         <h1>{{ page.title }}</h1>
         {% if page.caller %}
             <h2>{{ page.caller }}</h2>
         {% endif %}
+        <h3>{{ page.date | date: '%d %B %Y'}}</h3>
+        <p>Doors open 7.30pm, dance starts 8pm and ends 11.30pm</p>
         {{ content }}
-    </body>
+    </div>
+
+  </body>
 </html>
