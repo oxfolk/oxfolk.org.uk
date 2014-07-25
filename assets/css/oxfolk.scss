@@ -147,15 +147,23 @@ article {
     color: $color-grey-dark;
     
     a {
-        color: $color-blue-light;
+        color: $color-blue-dark;
 
         &:hover {
-            color: $color-blue-dark;
+            color: $color-blue-light;
         }
     }
 }
 .background-white {
     color: $color-grey-dark;
+
+    a {
+        color: $color-blue-dark;
+
+        &:hover {
+            color: $color-blue-light;
+        }
+    }
 }
 
 
@@ -234,15 +242,15 @@ dd {
     margin: 0 0 20px;
     background-color: #000;
     @include box-shadow(0 0 20px $color-black-translucent);
-}
-.media-wrapper > iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
 
+    &>iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+}
 
 a.ceilidh {
     margin-bottom: $gutter-size;
