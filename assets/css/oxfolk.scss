@@ -111,6 +111,10 @@ nav li.social a:hover {
     background-image: nav-image-url('sharethis-white.png');
 }
 
+i.links {
+    background-image: nav-image-url('link.png');
+}
+
 h1 {
     font-size: 3em;
     font-weight: 300;
@@ -146,7 +150,7 @@ article {
         color: $color-blue-dark;
 
         &:hover {
-            color: $color-white;
+            color: $color-grey-dark;
         }
     }
 }
@@ -309,6 +313,18 @@ dd {
 .ceilidh h4 {
     color: $color-white;
     margin: 0;
+}
+#links {
+    ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .pull-right {
+        ul {
+            text-align: right;
+        }
+    }
 }
 
 @media (min-width: 1200px) {

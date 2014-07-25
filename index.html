@@ -26,6 +26,8 @@ title: "Welcome to Oxfolk"
     {% for section in site.data.frontpage_sections %}
       {% include {{ section.include }} %}
     {% endfor %}
+
+    {% include links.html %}
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{{ site.js_url }}/bootstrap-scrollspy.min.js"></script>
