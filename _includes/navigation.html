@@ -2,7 +2,7 @@
   <ul>
     {% for section in site.data.frontpage_sections %}
       <li class="{{ section.id }}">
-        <a href="#{{ section.id }}">{{ section.title }}</a>
+        <a href="/#{{ section.id }}">{{ section.title }}</a>
       </li>
       {% endfor %}
   </ul>

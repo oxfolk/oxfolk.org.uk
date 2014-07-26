@@ -4,20 +4,8 @@
     <h3>2014-2015 Season</h3>
     <p>Doors open 7.30pm, dance starts 8pm and ends 11.30pm</p>
 
-    {% for event in site.posts reversed %}
-      <a href="{{ event.url }}" class="ceilidh">
-        <time>
-          <span class="month">{{ event.date | date: '%b' }}</span>
-          {{ event.date |date : '%d' }}
-          <span class="year">{{ event.date | date: '%Y' }}</span>
-        </time>
-        <div>
-          <h3>{{ event.title }}</h3>
-          {% if event.caller %}
-            <h4>{{ event.caller }}</h4>
-          {% endif %}
-        </div>
-      </a>
+    {% for ceilidh in site.posts reversed %}
+      {% include ceilidh.html %}
     {% endfor %}
   </div>
 </article>
