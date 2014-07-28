@@ -38,13 +38,24 @@
     </article>
     <article class="background-green">
         <div class="content">
-            <h3>Next ceilidh</h3>
-            {% if page.next %}
-                {% assign ceilidh=page.next %}
-                {% include ceilidh.html %}
-            {% else %}
-                <p>No more ceilidhs for this season. Check back soon for next season's programme!</p>
-            {% endif %}
+            <div class="pull-left half-width">
+                <h3>Previous ceilidh</h3>
+                {% if page.previous %}
+                    {% assign ceilidh=page.previous %}
+                    {% include ceilidh.html %}
+                {% else %}
+                    <p>This is the first ceilidh of the season</p>
+                {% endif %}
+            </div>
+            <div class="pull-right half-width">
+                <h3>Next ceilidh</h3>
+                {% if page.next %}
+                    {% assign ceilidh=page.next %}
+                    {% include ceilidh.html %}
+                {% else %}
+                    <p>No more ceilidhs for this season. Check back soon for next season's programme!</p>
+                {% endif %}
+            </div>
         </div>
     </article>
 
