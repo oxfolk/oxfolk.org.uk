@@ -13,9 +13,9 @@ nav {
     z-index: 1000;
     top: $gutter-size;
     right: $gutter-size;
-    padding: 0; 
+    padding: 0;
     *zoom: 1;
-    
+
     ul:before,
     ul:after {
       display: table;
@@ -145,7 +145,7 @@ article {
 .background-green {
     @include background-gradient($color-green-dark, $color-green-light);
     color: $color-grey-dark;
-    
+
     a {
         color: $color-blue-dark;
 
@@ -207,6 +207,16 @@ a {
     color: $color-grey-dark;
     text-decoration: none;
 }
+figure {
+  background: #eee;
+  @include box-shadow(0 0 20px $color-black-translucent);
+
+  figcaption {
+    text-align: right;
+    font-size: 0.8em;
+    margin  : 0.5em;
+  }
+}
 h2 i {
   display: inline-block;
   width: 1.5em;
@@ -256,7 +266,7 @@ a.ceilidh {
     margin-bottom: $gutter-size;
     display: block;
     color: $color-grey-dark;
-    
+
     &:hover {
         color: $color-blue-light;
     }
