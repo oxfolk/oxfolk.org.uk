@@ -1,6 +1,7 @@
 ---
 caller: "Special event"
 layout: "ceilidh"
+timing: "Doors open 4pm, dance starts 4.30pm and ends 7pm"
 ---
 
 ![Photo of Blowzabella](/assets/img/bands/blowzabella.jpg)
