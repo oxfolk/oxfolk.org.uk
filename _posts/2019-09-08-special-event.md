@@ -1,6 +1,6 @@
 ---
 title: 'Special event with Topette!'
-caller: 'Jen Morgan'
+caller: ''
 layout: 'ceilidh'
 timing: 'Doors open: 4:00pm for 4:30pm start'
 ---
