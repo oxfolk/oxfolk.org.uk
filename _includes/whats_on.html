@@ -1,11 +1,14 @@
 <article id="{{ section.id }}" class="background-green">
   <div class="content">
     <h2><i class="whats-on"></i> What's on</h2>
-    <h3>2017-2018 Season</h3>
-    <p>Doors open 7.30pm, dance starts 8pm and ends 11.30pm</p>
+    <h3>2019-2020 Season</h3>
+    <p>
+      Doors open 7.30pm, dance starts 8pm and ends 11.30pm, except for our
+      September special event and Folk Weekend Oxford (details when available,
+      if you click through)
+    </p>
 
-    {% for ceilidh in site.posts reversed %}
-      {% include ceilidh.html %}
-    {% endfor %}
+    {% for ceilidh in site.posts reversed %} {% include ceilidh.html %} {%
+    endfor %}
   </div>
 </article>

@@ -3,4 +3,4 @@ caller: 'Fee Lock'
 layout: 'ceilidh'
 ---
 
-More details coming soon.
+More details coming soon
