@@ -1,8 +1,8 @@
-@import 'constants';
+@import "constants";
 
 @function image-url($image_filename) {
-    @return url( $image-url + $image_filename );
+  @return url($image-url + $image_filename);
 }
 @function nav-image-url($image_filename) {
-    @return url( $image-url + 'nav/' + $image_filename );
+  @return url($image-url + "nav/" + $image_filename);
 }

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Oxfolk {{ page.date | date: '%B %Y' }} ceilidh: {{ page.title }}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Oxfolk {{ page.date | date: '%B %Y' }} ceilidh: {{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href="{{ site.css_url }}/oxfolk.css" rel="stylesheet">
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="{{ site.css_url }}/oxfolk.css" rel="stylesheet" />
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -15,49 +20,56 @@
     <![endif]-->
 
     {% include google_analytics.html %}
-</head>
+  </head>
 
-<body data-spy="scroll" data-target="nav ul">
+  <body data-spy="scroll" data-target="nav ul">
     {% include navigation.html %}
 
     <article class="background-blue">
-        <div class="content">
-            <h1>{{ page.date | date: '%B %Y' }} ceilidh</h1>
-        </div>
+      <div class="content">
+        <h1>{{ page.date | date: '%B %Y' }} ceilidh</h1>
+      </div>
     </article>
 
     <article class="background-white">
-        <div class="content">
-            <h1>{{ page.title }}</h1>
-            {% if page.caller %}
-            <h2>{{ page.caller }}</h2>
-            {% endif %}
-            <h3>{{ page.date | date: '%d %B %Y'}}</h3>
-            {% if page.timing %}
-            <p>{{ page.timing }}</p>
-            {% endif %} {% unless page.timing %}
-            <p>Doors open 7.30pm, dance starts 8pm and ends 11.30pm</p>
-            {% endunless %} {{ content }}
-        </div>
+      <div class="content">
+        <h1>{{ page.title }}</h1>
+        {% if page.caller %}
+        <h2>{{ page.caller }}</h2>
+        {% endif %}
+        <h3>{{ page.date | date: '%d %B %Y'}}</h3>
+        {% if page.timing %}
+        <p>{{ page.timing }}</p>
+        {% endif %} {% unless page.timing %}
+        <p>Doors open 7.30pm, dance starts 8pm and ends 11.30pm</p>
+        {% endunless %} {{ content }}
+      </div>
     </article>
     <article class="background-green">
-        <div class="content">
-            <div class="pull-left half-width">
-                <h3>Previous ceilidh</h3>
-                {% if page.previous %} {% assign ceilidh=page.previous %} {% include ceilidh.html %} {% else %}
-                <p>This is the first ceilidh of the season</p>
-                {% endif %}
-            </div>
-            <div class="pull-right half-width">
-                <h3>Next ceilidh</h3>
-                {% if page.next %} {% assign ceilidh=page.next %} {% include ceilidh.html %} {% else %}
-                <p>No more ceilidhs for this season. Check back soon for next season's programme!</p>
-                {% endif %}
-            </div>
+      <div class="content">
+        <div class="pull-left half-width">
+          <h3>Previous ceilidh</h3>
+          {% if page.previous %} {% assign ceilidh=page.previous %} {% include
+          ceilidh.html %} {% else %}
+          <p>This is the first ceilidh of the season</p>
+          {% endif %}
         </div>
+        <div class="pull-right half-width">
+          <h3>Next ceilidh</h3>
+          {% if page.next %} {% assign ceilidh=page.next %} {% include
+          ceilidh.html %} {% else %}
+          <p>
+            No more ceilidhs for this season. Check back soon for next season's
+            programme!
+          </p>
+          {% endif %}
+        </div>
+      </div>
     </article>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513c6e3638871839"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513c6e3638871839"
+    ></script>
+  </body>
 </html>
