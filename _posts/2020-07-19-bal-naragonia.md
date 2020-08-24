@@ -4,6 +4,6 @@ timing: "This is a special online event due to Covid-19"
 layout: "ceilidh"
 ---
 
-Bal folk workshop with Kerry Fletcher
+[Bal basics workshop with Kerry Fletcher](https://www.tickettailor.com/events/oxfolkceilidhs/)
 
-See [here](https://www.tickettailor.com/events/oxfolkceilidhs/) for further details.
+[Bal with Naragonia](https://www.tickettailor.com/events/oxfolkceilidhs/)
