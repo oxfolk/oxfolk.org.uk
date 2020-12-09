@@ -1,0 +1,7 @@
+---
+title: "Climax Ceilidh band + Hannah Moore"
+timing: "This is a special online event due to Covid-19"
+layout: "ceilidh"
+---
+
+[More information and tickets](https://www.tickettailor.com/events/oxfolkceilidhs/)
