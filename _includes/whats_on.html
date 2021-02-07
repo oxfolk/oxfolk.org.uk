@@ -1,15 +1,11 @@
 <article id="{{ section.id }}" class="background-green">
   <div class="content">
     <h2><i class="whats-on"></i> What's on</h2>
-    <h3>2019-2020 Season - <strong>Extended</strong></h3>
-    <p>
-      Doors open 7.30pm, dance starts 8pm and ends 11.30pm, except for our
-      September special event and Folk Weekend Oxford (details when available,
-      if you click through)
-    </p>
+    <h3>2020-21 Season</h3>
 
     {% for ceilidh in site.posts reversed %} {% include ceilidh.html %} {% endfor %}
 
-    <p>Check back for more online dances.</p>
+    <p>All tickets are available <a href="https://buytickets.at/oxfolkceilidhs" target="_blank">here</a></p>
+    <p>Check back for news for dates</p>
   </div>
 </article>
