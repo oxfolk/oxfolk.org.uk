@@ -1,8 +1,7 @@
 ---
-title: "Beth Gifford and Matt Brookes"
-timing: "This is a special online event due to Covid-19"
+title: "Classic European Dance Workshop"
 layout: "ceilidh"
-caller: "Lisa Heywood"
+caller: "Kerry Fletcher and Chris Walshaw"
 ---
 
-See [here](https://www.tickettailor.com/events/oxfolkceilidhs/) for further details.
+part of [Folk Weekend Oxford](http://folkweekendoxford.co.uk)
