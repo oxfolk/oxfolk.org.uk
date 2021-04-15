@@ -1,4 +1,8 @@
-<a href="{{ ceilidh.url }}" class="ceilidh">
+<a
+  href="{% if ceilidh.eventUrl %}{{ ceilidh.eventUrl }}{% else %}{{ ceilidh.url }}{% endif %}"
+  class="ceilidh"
+  {% if ceilidh.eventUrl %}target="_blank"{% endif %}
+>
   <time>
     <span class="month">{{ ceilidh.date | date: '%b' }}</span>
     {{ ceilidh.date |date : '%d' }}
