@@ -5,8 +5,11 @@
   title: What is a ceilidh
   include: what.html
 - id: whats-on
-  title: What's one
+  title: What's on
   include: whats_on.html
+- id: covid-19
+  title: Covid Safety
+  include: covid-safety.html
 - id: how-much
   title: How much
   include: how_much.html

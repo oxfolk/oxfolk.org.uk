@@ -1,171 +1,175 @@
 ---
 ---
-@import 'normalize';
-@import 'css3';
-@import 'utils';
+
+@import "normalize";
+@import "css3";
+@import "utils";
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
-    position: fixed;
-    z-index: 1000;
-    top: $gutter-size;
-    right: $gutter-size;
+  position: fixed;
+  z-index: 1000;
+  top: $gutter-size;
+  right: $gutter-size;
+  padding: 0;
+  *zoom: 1;
+
+  ul:before,
+  ul:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  ul:after {
+    clear: both;
+  }
+  ul {
     padding: 0;
-    *zoom: 1;
+    margin: 0;
+    zoom: 1;
+    display: block;
+  }
 
-    ul:before,
-    ul:after {
-      display: table;
-      line-height: 0;
-      content: "";
-    }
-    ul:after {
-      clear: both;
-    }
-    ul {
-        padding: 0;
-        margin: 0;
-        zoom: 1;
-        display: block;
+  li {
+    display: block;
+    float: left;
+    width: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: $nav-size;
+    margin-left: 0.5em;
+  }
 
-    }
-
-    li {
-        display: block;
-        float: left;
-        width: auto;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: $nav-size;
-        margin-left: 0.5em;
-
-    }
-
-    a {
-        display: block;
-        width: auto;
-        height: $nav-size;
-        background: rgba(255, 255, 255, 0.6) 0 0 no-repeat;
-        background-size: 100%;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        @include box-shadow(0 0 10px $color-black-translucent);
-        @include transition(background 0.2s linear);
-    }
-    a:hover,
-    li.active a {
-        background-color: rgba(0, 142, 179, 0.6);
-    }
-
+  a {
+    display: block;
+    width: auto;
+    height: $nav-size;
+    background: rgba(255, 255, 255, 0.6) 0 0 no-repeat;
+    background-size: 100%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    @include box-shadow(0 0 10px $color-black-translucent);
+    @include transition(background 0.2s linear);
+  }
+  a:hover,
+  li.active a {
+    background-color: rgba(0, 142, 179, 0.6);
+  }
 }
 nav li.welcome a {
-    background-image: nav-image-url('home.png');
+  background-image: nav-image-url("home.png");
 }
 nav li.welcome.active a,
 nav li.welcome a:hover {
-    background-image: nav-image-url('home-white.png');
+  background-image: nav-image-url("home-white.png");
 }
 nav li.what-is-a-ceilidh a {
-    background-image: nav-image-url('help.png');
+  background-image: nav-image-url("help.png");
 }
 nav li.what-is-a-ceilidh.active a,
 nav li.what-is-a-ceilidh a:hover,
 i.what-is-a-ceilidh {
-    background-image: nav-image-url('help-white.png');
+  background-image: nav-image-url("help-white.png");
 }
 nav li.whats-on a,
 i.whats-on {
-    background-image: nav-image-url('calendar.png');
+  background-image: nav-image-url("calendar.png");
 }
 nav li.whats-on.active a,
 nav li.whats-on a:hover {
-    background-image: nav-image-url('calendar-white.png');
+  background-image: nav-image-url("calendar-white.png");
 }
 nav li.how-much a,
 i.how-much {
-    background-image: nav-image-url('pound.png');
+  background-image: nav-image-url("pound.png");
 }
 nav li.how-much.active a,
 nav li.how-much a:hover {
-    background-image: nav-image-url('pound-white.png');
+  background-image: nav-image-url("pound-white.png");
 }
 nav li.where a {
-    background-image: nav-image-url('location.png');
+  background-image: nav-image-url("location.png");
 }
 nav li.where.active a,
 nav li.where a:hover,
 i.where {
-    background-image: nav-image-url('location-white.png');
+  background-image: nav-image-url("location-white.png");
 }
 nav li.social a,
 i.social {
-    background-image: nav-image-url('social.png');
+  background-image: nav-image-url("social.png");
 }
 nav li.social.active a,
 nav li.social a:hover {
-    background-image: nav-image-url('social-white.png');
+  background-image: nav-image-url("social-white.png");
+}
+nav li.covid-19 a {
+  background-image: nav-image-url("covid-19.svg");
+}
+nav li.covid-19.active a,
+nav li.covid-19 a:hover,
+i.covid-19 {
+  background-image: nav-image-url("covid-19-white.svg");
 }
 
 i.links {
-    background-image: nav-image-url('link.png');
+  background-image: nav-image-url("link.png");
 }
 
 h1 {
-    font-size: 3em;
-    font-weight: 300;
-    margin-bottom: 0;
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 .lead {
-    font-size: 1.75em;
-    font-weight: 300;
-    margin-top: 0;
+  font-size: 1.75em;
+  font-weight: 300;
+  margin-top: 0;
 }
-
 
 article {
-    zoom: 1;
-    @include box-shadow(0 -3px 5px 1px $color-black-translucent);
-    text-shadow: 0 0 2px $color-black-translucent;
-    color: $color-off-white;
-    padding-bottom: $gutter-size;
+  zoom: 1;
+  @include box-shadow(0 -3px 5px 1px $color-black-translucent);
+  text-shadow: 0 0 2px $color-black-translucent;
+  color: $color-off-white;
+  padding-bottom: $gutter-size;
 }
 #welcome {
-    background: image-url('background-desat.jpg') no-repeat 0 30%;
-    background-size: 100%;
+  background: image-url("background-desat.jpg") no-repeat 0 30%;
+  background-size: 100%;
 }
 
 .background-blue {
-    @include background-gradient($color-blue-dark, $color-blue-light);
+  @include background-gradient($color-blue-dark, $color-blue-light);
 }
 .background-green {
-    @include background-gradient($color-green-dark, $color-green-light);
-    color: $color-grey-dark;
+  @include background-gradient($color-green-dark, $color-green-light);
+  color: $color-grey-dark;
 
-    a {
-        color: $color-blue-dark;
+  a {
+    color: $color-blue-dark;
 
-        &:hover {
-            color: $color-blue-light;
-        }
+    &:hover {
+      color: $color-blue-light;
     }
+  }
 }
 .background-white {
-    color: $color-grey-dark;
+  color: $color-grey-dark;
 
-    a {
-        color: $color-blue-dark;
+  a {
+    color: $color-blue-dark;
 
-        &:hover {
-            color: $color-blue-light;
-        }
+    &:hover {
+      color: $color-blue-light;
     }
+  }
 }
-
 
 .content {
   padding: $gutter-size 0;
@@ -184,15 +188,14 @@ article {
   clear: both;
 }
 
-
 .pull-left {
-    float: left;
+  float: left;
 }
 .pull-right {
-    float: right;
+  float: right;
 }
 .half-width {
-    width: 49%;
+  width: 49%;
 }
 
 img {
@@ -204,8 +207,8 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 a {
-    color: $color-grey-dark;
-    text-decoration: none;
+  color: $color-grey-dark;
+  text-decoration: none;
 }
 figure {
   background: #eee;
@@ -214,7 +217,7 @@ figure {
   figcaption {
     text-align: right;
     font-size: 0.8em;
-    margin  : 0.5em;
+    margin: 0.5em;
   }
 }
 h2 i {
@@ -222,121 +225,121 @@ h2 i {
   width: 1.5em;
   height: 1.5em;
   margin-top: 1px;
-  *margin-right: .3em;
+  *margin-right: 0.3em;
   line-height: 1.5em;
   vertical-align: text-top;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .twitter-timeline {
-    width: 100%;
+  width: 100%;
 }
 dl {
-    overflow: hidden;
+  overflow: hidden;
 }
-dt, dd {
-    float: left;
+dt,
+dd {
+  float: left;
 }
 dt {
-    clear: left;
+  clear: left;
 }
 dd {
-    margin-left: $gutter-size;
+  margin-left: $gutter-size;
 }
 
 .media-wrapper {
-    position: relative;
-    height: 0;
-    width: 100%;
-    padding-bottom: 75%;
-    margin: 0 0 20px;
-    background-color: #000;
-    @include box-shadow(0 0 20px $color-black-translucent);
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 75%;
+  margin: 0 0 20px;
+  background-color: #000;
+  @include box-shadow(0 0 20px $color-black-translucent);
 
-    &>iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-    }
+  & > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
 }
 
 a.ceilidh {
-    margin-bottom: $gutter-size;
+  margin-bottom: $gutter-size;
+  display: block;
+  color: $color-grey-dark;
+
+  &:hover {
+    color: $color-blue-light;
+  }
+
+  time {
+    background: $color-white;
     display: block;
-    color: $color-grey-dark;
+    width: 2em;
+    height: 2em;
+    font-size: 2.5em;
+    line-height: 2em;
+    position: relative;
+    text-align: center;
+    float: left;
+    @include box-shadow(0 0 10px $color-black-translucent);
 
-    &:hover {
-        color: $color-blue-light;
+    span {
+      font-size: 0.35em;
+      text-transform: uppercase;
+      display: block;
+      position: absolute;
+      line-height: 1;
+      z-index: 2;
+      width: 100%;
     }
 
-    time {
-        background: $color-white;
-        display: block;
-        width: 2em;
-        height: 2em;
-        font-size: 2.5em;
-        line-height: 2em;
-        position: relative;
-        text-align: center;
-        float: left;
-        @include box-shadow(0 0 10px $color-black-translucent);
+    .year {
+      bottom: $gutter-size-small;
+    }
+    .month {
+      top: $gutter-size-small;
+    }
+  }
 
-        span {
-            font-size: 0.35em;
-            text-transform: uppercase;
-            display: block;
-            position: absolute;
-            line-height: 1;
-            z-index: 2;
-            width: 100%;
-        }
+  & > div {
+    margin-left: $gutter-size;
+    float: left;
+  }
 
-        .year {
-            bottom: $gutter-size-small;
-        }
-        .month {
-            top: $gutter-size-small;
-        }
-    }
+  h3 {
+    margin-bottom: 0;
+  }
+  h4 {
+    color: $color-white;
+    margin: 0;
+  }
 
-    &>div {
-        margin-left: $gutter-size;
-        float: left;
-    }
-
-    h3 {
-        margin-bottom: 0;
-    }
-    h4 {
-        color: $color-white;
-        margin: 0;
-    }
-
-    &:before,
-    &:after {
-        display: table;
-        line-height: 0;
-        content: "";
-    }
-    &:after {
-        clear: both;
-    }
+  &:before,
+  &:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
 }
 
-
 #links {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .pull-right {
     ul {
-        list-style: none;
-        margin-left: 0;
-        padding-left: 0;
+      text-align: right;
     }
-    .pull-right {
-        ul {
-            text-align: right;
-        }
-    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -351,7 +354,7 @@ a.ceilidh {
 }
 @media (max-width: 767px) {
   body {
-    padding-bottom: $nav-size;
+    padding-bottom: 3em;
   }
   .content {
     padding-right: 20px;
@@ -391,16 +394,16 @@ a.ceilidh {
     @include box-shadow(0 -3px 5px 1px $color-black-translucent);
   }
   nav ul {
-    width: 6 * $nav-size;
+    width: 7 * $nav-size;
     margin: 0 auto;
   }
   nav li {
     margin: 0;
   }
   nav a {
-      @include box-shadow(none);
+    @include box-shadow(none);
   }
-  .ceilidh>div {
+  .ceilidh > div {
     max-width: 15em;
   }
   .ceilidh h3 {
@@ -411,7 +414,6 @@ a.ceilidh {
       ul {
         text-align: center;
       }
-
     }
     .pull-right {
       ul {
