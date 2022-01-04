@@ -1,8 +1,8 @@
 ---
-title: "Diatonics"
+title: "CANCELLED - Diatonics"
 layout: "ceilidh"
 caller: "Hannah Moore"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 
-Please book ticket via our [booking system](https://www.tickettailor.com/events/oxfolkceilidhs/).
+**This event has been cancelled due to Covid-19**.

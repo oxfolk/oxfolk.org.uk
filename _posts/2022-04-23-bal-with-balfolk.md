@@ -1,7 +1,6 @@
 ---
-title: "Jigfoot"
+title: "Bal with Balfolk Reading"
 layout: "ceilidh"
-caller: "Ian Nichols"
 timing: "part of Folk Weekend Oxford"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
