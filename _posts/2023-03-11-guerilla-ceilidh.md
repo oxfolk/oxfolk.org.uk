@@ -1,7 +1,7 @@
 ---
-title: "PolkaWorks"
+title: "Guerilla Ceilidh"
 layout: "ceilidh"
-caller: "Aidan Hansell"
+caller: Steph West
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

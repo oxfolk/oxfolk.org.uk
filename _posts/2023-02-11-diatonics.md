@@ -1,7 +1,7 @@
 ---
-title: "New Bees"
+title: "Diatonics"
 layout: "ceilidh"
-caller: "Jane Bird"
+caller: "Hannah Moore"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 
