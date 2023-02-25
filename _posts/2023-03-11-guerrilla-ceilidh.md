@@ -1,7 +1,7 @@
 ---
-title: "Contrasaurus"
+title: "Guerrilla Ceilidh"
 layout: "ceilidh"
-caller: Charlotte Rich-Griffin
+caller: Steph West
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

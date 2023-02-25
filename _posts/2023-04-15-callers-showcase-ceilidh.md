@@ -1,7 +1,6 @@
 ---
-title: "The Cock & Bull Band"
+title: "Callers’ Showcase Ceilidh"
 layout: "ceilidh"
-caller: Fee Lock
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

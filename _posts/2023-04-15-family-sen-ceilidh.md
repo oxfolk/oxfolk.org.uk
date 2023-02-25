@@ -1,7 +1,6 @@
 ---
-title: "Frog on a Bike"
+title: "Family & SEN Ceilidh"
 layout: "ceilidh"
-caller: Barry Goodman
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

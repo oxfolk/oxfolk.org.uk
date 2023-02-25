@@ -1,7 +1,7 @@
 ---
-title: "Diatonics"
+title: "Granny’s Attic"
 layout: "ceilidh"
-caller: "Hannah Moore"
+caller: "Erin Mansfield"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

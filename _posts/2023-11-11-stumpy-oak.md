@@ -1,6 +1,7 @@
 ---
-title: "Blowzabella"
+title: "Stumpy Oak"
 layout: "ceilidh"
+caller: "Sarah Petts"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

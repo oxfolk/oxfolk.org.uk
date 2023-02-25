@@ -1,5 +1,5 @@
 ---
-title: "Topette!!"
+title: "Callers’ Workshop with Steph West"
 layout: "ceilidh"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
