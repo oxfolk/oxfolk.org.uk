@@ -1,7 +1,7 @@
 ---
-title: "Stumpy Oak"
+title: "The Warleggan Village Band"
 layout: "ceilidh"
-caller: "Sarah Petts"
+caller: "Hannah Moore"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

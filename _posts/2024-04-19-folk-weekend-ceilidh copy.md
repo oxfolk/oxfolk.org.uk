@@ -1,7 +1,6 @@
 ---
-title: "Granny’s Attic"
+title: "Folk Weekend Ceilidh"
 layout: "ceilidh"
-caller: "Erin Mansfield"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

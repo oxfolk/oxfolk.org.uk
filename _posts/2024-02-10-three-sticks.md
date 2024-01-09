@@ -1,6 +1,7 @@
 ---
-title: "Callers’ Showcase Ceilidh"
+title: "3Sticks"
 layout: "ceilidh"
+caller: "Lisa Heywood"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

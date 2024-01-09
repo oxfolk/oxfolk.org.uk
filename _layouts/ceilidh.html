@@ -35,7 +35,7 @@
         {% if page.caller %}
         <h2>{{ page.caller }}</h2>
         {% endif %}
-        <h3>{{ page.date | date: '%d %B %Y'}}</h3>
+        <h3>{{ page.date | date: '%d %B %Y' }}</h3>
         {% if page.timing %}
         <p>{{ page.timing }}</p>
         {% endif %} {% unless page.timing %}
@@ -47,15 +47,13 @@
       <div class="content">
         <div class="pull-left half-width">
           <h3>Previous ceilidh</h3>
-          {% if page.previous %} {% assign ceilidh=page.previous %} {% include
-          ceilidh.html %} {% else %}
+          {% if page.previous %} {% assign ceilidh=page.previous %} {% include ceilidh.html %} {% else %}
           <p>This is the first ceilidh of the season</p>
           {% endif %}
         </div>
         <div class="pull-right half-width">
           <h3>Next ceilidh</h3>
-          {% if page.next %} {% assign ceilidh=page.next %} {% include
-          ceilidh.html %} {% else %}
+          {% if page.next %} {% assign ceilidh=page.next %} {% include ceilidh.html %} {% else %}
           <p>
             No more ceilidhs for this season. Check back soon for next season's
             programme!

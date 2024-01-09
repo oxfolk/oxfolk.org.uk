@@ -1,7 +1,6 @@
 ---
-title: "Geckoes"
+title: "Family + SEN Ceilidh"
 layout: "ceilidh"
-caller: Sheena Masson
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 

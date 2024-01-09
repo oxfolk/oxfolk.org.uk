@@ -1,5 +1,5 @@
 ---
-title: "Callers’ Workshop with Steph West"
+title: "Callers’ Development Day [workshop]"
 layout: "ceilidh"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---

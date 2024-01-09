@@ -1,5 +1,5 @@
 ---
-title: "Family & SEN Ceilidh"
+title: "Blowzabella"
 layout: "ceilidh"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---

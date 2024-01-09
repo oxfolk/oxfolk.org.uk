@@ -1,7 +1,7 @@
 ---
-title: "Guerrilla Ceilidh"
+title: "Out of Hand"
 layout: "ceilidh"
-caller: Steph West
+caller: "Various callers"
 eventUrl: "https://www.tickettailor.com/events/oxfolkceilidhs/"
 ---
 
